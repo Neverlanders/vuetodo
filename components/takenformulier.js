@@ -1,8 +1,7 @@
 app.component('taken-formulier',{
     template:
     `   
-   <div class="col-lg-10 offset-lg-1">
-   
+   <div class="col-lg-10 offset-lg-1"> 
    <h1 class="shadow-lg p-3 my-5 bg-body rounded text-center">Takenlijst</h1>
     <button @click="wisAlleTaken()" class="btn btn-outline-danger d-flex mx-auto mb-3" type="button">Wis alle taken</i></button> 
         <taak-toevoegen @toevoegenEenTaak="eenTaakToevoegen"></taak-toevoegen>        
@@ -25,7 +24,6 @@ app.component('taken-formulier',{
           taken: [],
       }
     },
-
     methods:{
         eenTaakToevoegen(taak){
             this.taken.push(taak)
@@ -38,6 +36,4 @@ app.component('taken-formulier',{
         },
 
         }
-
-
 })
